@@ -81,7 +81,7 @@ version_param = openapi.Parameter(
     responses={200: elements_response}
 )
 @api_view(['GET',])
-def get_version_elements(request, id):
+def get_version_elements(request, id: int):
     """Возвращает элементы текущей версии справочника, при указании версии
     в запросе возвращает элементы указанной версии.
     """
@@ -135,7 +135,7 @@ value_param = openapi.Parameter(
     responses={200: elements_response}
 )
 @api_view(['GET',])
-def check_version_elements(request, id):
+def check_version_elements(request, id: int):
     """Валидирует элемент по коду и значению (по версии - при указании),
     возвращает элемент, при нахождении.
     """
