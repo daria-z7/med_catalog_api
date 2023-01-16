@@ -27,7 +27,7 @@ cd med_catalog_api
 Cоздайте и активируйте виртуальное окружение:
 
 ```
-python3 -m venv venv
+python -m venv venv
 ```
 ```
 source venv/Scripts/activate (for Windows)
